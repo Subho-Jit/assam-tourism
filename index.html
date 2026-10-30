@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Assam's wildlife, tea gardens, culture, rivers and beautiful destinations.">
+  <title>Explore Assam | Discover Northeast India</title>
+
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <div class="topbar">Discover Assam <strong>— Rivers, Rainforests & Living Heritage</strong></div>
+
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">Explore <span>Assam</span> 🌿</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#planner">Plan a Trip</a>
+        <a href="#contact">Contact</a>
+        <button class="btn" type="button" data-open-auth="login">Login / Register</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <span class="eyebrow">Welcome to Northeast India</span>
+        <h1>Find your <em>wild</em> side in Assam.</h1>
+        <p>From misty tea gardens and mighty rivers to rare wildlife and vibrant traditions, discover a destination that stays with you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#destinations">Explore destinations →</a>
+          <a class="btn btn-outline" href="#planner">Plan your journey</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="facts">
+        <div class="fact"><strong>1</strong><span>Mighty Brahmaputra</span></div>
+        <div class="fact"><strong>UNESCO</strong><span>Natural heritage</span></div>
+        <div class="fact"><strong>Tea</strong><span>Rolling gardens</span></div>
+        <div class="fact"><strong>Culture</strong><span>Living traditions</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Explore the region</span>
+          <h2>Places worth discovering</h2>
+          <p>Find wildlife, island culture, historic landmarks and peaceful green landscapes.</p>
+        </div>
+
+        <div class="search-bar">
+          <input type="search" id="destinationSearch" placeholder="Search destinations..." aria-label="Search destinations">
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">All places</button>
+          <button class="filter" data-filter="nature">Nature & wildlife</button>
+          <button class="filter" data-filter="culture">Culture</button>
+          <button class="filter" data-filter="heritage">Heritage</button>
+        </div>
+
+        <div class="destination-grid" id="destinationGrid">
+          <article class="destination-card reveal" data-category="nature" data-name="kaziranga national park wildlife rhino safari">
+            <img loading="lazy" src="https://i0.wp.com/kaziranganationalparkassam.in/wp-content/uploads/2024/09/DSC_0758.jpg?resize=648%2C415&ssl=1" alt="Wildlife in a green natural habitat">
+            <div class="card-content">
+              <span class="tag">Nature & wildlife</span>
+              <h3>Kaziranga National Park</h3>
+              <p>Discover a celebrated wildlife landscape known for the greater one-horned rhinoceros and rich biodiversity.</p>
+              <a class="btn" href="https://www.google.com/goto?url=CAESYwHrOzAVqe3ns2pzQGwHNSNkkWv6Trw5hlwihkRmuopO2O3o3JmFPNvG5E8Haqz32QksMiUE8mOjWAyYgffm7-QUiUg5ZJz1TYbWKsuS7FACcKlgfNyvSeDJfyoSH0a2uh8i7Q" target="_blank" rel="noopener noreferrer">Explore park ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="culture" data-name="majuli island river culture satra">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA_MtJ6zxSdHADlAj0f9KCy9Phnfksl0yveP83sWWMhx_TwDIpY7TCvuMB&s=10" alt="Lush green landscape">
+            <div class="card-content">
+              <span class="tag">Culture</span>
+              <h3>Majuli Island</h3>
+              <p>Experience river island life, satra traditions, local crafts and a distinctive cultural landscape.</p>
+              <a class="btn" href="https://assamtourism.gov.in/" target="_blank" rel="noopener noreferrer">Explore Assam ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="heritage" data-name="sivasagar rang ghar ahom monuments history">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmhF3APbWk2qtDPY6z_S_NPsLkUw190a-OeGseCvjlpwo35tQ71HCmJf_j&s=10" alt="Historic stone architecture">
+            <div class="card-content">
+              <span class="tag">Heritage</span>
+              <h3>Sivasagar</h3>
+              <p>Explore the legacy of the Ahom kingdom through historic monuments, temples and tanks.</p>
+              <a class="btn" href="https://assamtourism.gov.in/" target="_blank" rel="noopener noreferrer">Discover more ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="tea gardens jorhat dibrugarh plantations">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Xnq6tr91AEtwQjkl23Tg3m9fW1VCBuWlE1KJ8oFQ52eBC9m5ijE2J0MP&s=10" alt="Rows of green tea plants">
+            <div class="card-content">
+              <span class="tag">Nature</span>
+              <h3>Tea Gardens</h3>
+              <p>See rolling green plantations, learn about Assam tea and enjoy the calm of the countryside.</p>
+              <a class="btn" href="https://assamtourism.gov.in/" target="_blank" rel="noopener noreferrer">Explore tea country ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="culture" data-name="guwahati kamakhya temple brahmaputra city">
+            <img loading="lazy" src="https://www.savaari.com/blog/wp-content/uploads/2024/02/Guwahati-city1.webp" alt="Temple architecture">
+            <div class="card-content">
+              <span class="tag">Culture</span>
+              <h3>Guwahati</h3>
+              <p>Discover riverfront views, regional food, bustling markets and important cultural sites.</p>
+              <a class="btn" href="https://assamtourism.gov.in/" target="_blank" rel="noopener noreferrer">Explore city ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="heritage" data-name="hajo pilgrimage history temples">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR66MMdOCyZE_IMD_xAzp5480dkJ8V5WK4Rz5uyyR9b_w&s=10" alt="Traditional Indian architecture">
+            <div class="card-content">
+              <span class="tag">Heritage</span>
+              <h3>Hajo</h3>
+              <p>Visit a historic town with important spiritual sites and a long tradition of cultural exchange.</p>
+              <a class="btn" href="https://assamtourism.gov.in/" target="_blank" rel="noopener noreferrer">Discover Hajo ↗</a>
+            </div>
+          </article>
+          <article class="destination-card reveal" data-category="heritage" data-name="kamakhya temple guwahati shakti peetha spiritual heritage">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqqOSUvKxSrgD2pO5HI3kN87A84Vof6LlGch2yhINw42Y-AzHWXSzUpixn&s=10" alt="Guwahati landscape near Kamakhya Temple">
+            <div class="card-content">
+              <span class="tag">Spiritual heritage</span>
+              <h3>Kamakhya Temple</h3>
+              <p>Visit one of Assam's most important Shakti Peethas, located on Nilachal Hill in Guwahati and known for its distinctive temple architecture and traditions.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Kamakhya+Temple+Guwahati" target="_blank" rel="noopener noreferrer">Explore temple ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="heritage" data-name="umananda temple peacock island guwahati brahmaputra">
+            <img loading="lazy" src="https://media.assettype.com/english-sentinelassam%2Fimport%2Fh-upload%2F2021%2F10%2F18%2F261437-umananda-temple-1.webp?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100" alt="Traditional temple architecture">
+            <div class="card-content">
+              <span class="tag">Heritage</span>
+              <h3>Umananda Temple</h3>
+              <p>Discover this temple on Peacock Island in the Brahmaputra, with a memorable river crossing and views of Guwahati.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Umananda+Temple+Guwahati" target="_blank" rel="noopener noreferrer">Discover Umananda ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="heritage" data-name="rang ghar sivasagar ahom amphitheatre monument">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHiElAZSRVuqR-ZQEePSPL-5xuGqO0IaznAERx-1_aMw&s=10" alt="Historic architecture">
+            <div class="card-content">
+              <span class="tag">Ahom heritage</span>
+              <h3>Rang Ghar</h3>
+              <p>Explore the celebrated Ahom-era pavilion near Sivasagar, associated with royal sports and cultural gatherings.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Rang+Ghar+Sivasagar" target="_blank" rel="noopener noreferrer">Explore monument ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="heritage" data-name="talatal ghar sivasagar ahom palace history">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Hbn0CdV7GjYzyKSBqe4YB-BIZ2G8Obgr7vbAnb9U8w&s=10" alt="Historic palace architecture">
+            <div class="card-content">
+              <span class="tag">Ahom heritage</span>
+              <h3>Talatal Ghar</h3>
+              <p>See an important Ahom royal complex in Sivasagar, remembered for its palace structure and historic underground passages.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Talatal+Ghar+Sivasagar" target="_blank" rel="noopener noreferrer">Discover Talatal Ghar ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="heritage" data-name="charaideo maidams ahom burial mounds unesco heritage">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGWPQ6s9Hl_f2J9TL1bPeKbPpfC1KMN15Ip8_-ZLSNGg&s=10" alt="Green landscape in Assam">
+            <div class="card-content">
+              <span class="tag">UNESCO World Heritage</span>
+              <h3>Charaideo Maidams</h3>
+              <p>Learn about the royal burial mounds of the Ahom dynasty, an important place for understanding Assam's history and heritage.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Charaideo+Maidams+Assam" target="_blank" rel="noopener noreferrer">Explore Charaideo ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="heritage" data-name="madan kamdev archaeological site temples heritage baihata chariali">
+            <img loading="lazy" src="https://ik.imagekit.io/2kkwu3vzk/diversity-assam/MadanKamdev1_5m8Z-r2T3s.webp?tr=q-60" alt="Historic stone temple architecture">
+            <div class="card-content">
+              <span class="tag">Archaeological heritage</span>
+              <h3>Madan Kamdev</h3>
+              <p>Visit an archaeological site near Baihata Chariali with the remains of medieval temples and intricate stone carvings.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Madan+Kamdev+Archaeological+Site+Assam" target="_blank" rel="noopener noreferrer">Discover the site ↗</a>
+            </div>
+          </article>
+        </div>
+          <article class="destination-card reveal" data-category="nature" data-name="manas national park tiger elephant golden langur unesco wildlife sanctuary">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=900&q=80" alt="Wildlife in a forest habitat">
+            <div class="card-content">
+              <span class="tag">National Park</span>
+              <h3>Manas National Park</h3>
+              <p>Explore a UNESCO-listed landscape near the Bhutan foothills, known for its forests, grasslands and rare wildlife.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Manas+National+Park+Assam" target="_blank" rel="noopener noreferrer">Explore Manas ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="nameri national park sonitpur birdwatching river forest">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNXN7L05g8q78AmkKWEiRUIjCARAr5K_XUOZBCToIhQ&s=10" alt="Dense green forest">
+            <div class="card-content">
+              <span class="tag">National Park</span>
+              <h3>Nameri National Park</h3>
+              <p>Enjoy forest scenery and birdwatching in a protected area near the Jia Bhoroli River and the Himalayan foothills.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Nameri+National+Park+Assam" target="_blank" rel="noopener noreferrer">Explore Nameri ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="orang national park rajiv gandhi wildlife rhino assam">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHGqC1_A4ELa4oLBIFe71hAbaukhw0K5aus3NXsUJXl9BRjy6_bD0tLII&s=10" alt="Wildlife in a natural habitat">
+            <div class="card-content">
+              <span class="tag">National Park</span>
+              <h3>Orang National Park</h3>
+              <p>Visit a compact floodplain park on the north bank of the Brahmaputra, noted for rhinoceros and other wildlife.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Orang+National+Park+Assam" target="_blank" rel="noopener noreferrer">Explore Orang ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="dibru saikhowa national park tinali river dolphins birds wetland">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd_MdgYsZh6YAZuT9rK4j99_mf-NVmW_KNGn4m0enw7o_MTFnlMSiuSG5h&s=10s" alt="Wildlife in a green landscape">
+            <div class="card-content">
+              <span class="tag">National Park</span>
+              <h3>Dibru-Saikhowa National Park</h3>
+              <p>Discover river islands, wetlands and grasslands that support diverse birds and wildlife in eastern Assam.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Dibru-Saikhowa+National+Park+Assam" target="_blank" rel="noopener noreferrer">Explore Dibru-Saikhowa ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="raimona national park kokrajhar golden langur forest bodoland">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzn4YW-MS53VPm2XDC1KPGkD9MXRw2SxvB9BVLdbnCpw&s=10" alt="Protected forest landscape">
+            <div class="card-content">
+              <span class="tag">National Park</span>
+              <h3>Raimona National Park</h3>
+              <p>Explore forests in western Assam known for rich biodiversity and the golden langur habitat.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Raimona+National+Park+Assam" target="_blank" rel="noopener noreferrer">Explore Raimona ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="dehing patkai national park rainforest dibrugarh tinsukia elephant hoolock gibbon">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Qjyn_22zxW9dU0D9rcAeJHSL_nMmJMx0OnmHwKofmw&s=10" alt="Rainforest canopy">
+            <div class="card-content">
+              <span class="tag">National Park</span>
+              <h3>Dehing Patkai National Park</h3>
+              <p>Experience Assam's tropical rainforest landscape, home to diverse plants, birds and mammals.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Dehing+Patkai+National+Park+Assam" target="_blank" rel="noopener noreferrer">Explore Dehing Patkai ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="pobitora wildlife sanctuary morigaon rhino guwahati">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMTj-nZXDdxXO1seBNU4q4IJd0TvZPo2tN-p24Bj8GLw&s=10" alt="Wildlife in grassland">
+            <div class="card-content">
+              <span class="tag">Wildlife Sanctuary</span>
+              <h3>Pobitora Wildlife Sanctuary</h3>
+              <p>A popular wildlife destination near Guwahati, especially known for its greater one-horned rhinoceros.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Pobitora+Wildlife+Sanctuary+Assam" target="_blank" rel="noopener noreferrer">Visit Pobitora ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="hoollongapar gibbon wildlife sanctuary jorhat hoolock gibbon rainforest">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXupmbYjnFl3ZsLCtAAdAfHK-fcDjUZYpug8dgML_NoA&s=10" alt="Green forest canopy">
+            <div class="card-content">
+              <span class="tag">Wildlife Sanctuary</span>
+              <h3>Hoollongapar Gibbon Sanctuary</h3>
+              <p>Visit a forest sanctuary near Jorhat that protects hoolock gibbons and other forest wildlife.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Hoollongapar+Gibbon+Sanctuary+Assam" target="_blank" rel="noopener noreferrer">Explore Gibbon Sanctuary ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="chakrashila wildlife sanctuary kokrajhar dhubri golden langur">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjvBrRTyHpUuQkdMGp18ys9zslZx1FipPsB3Pe8NnUZEralfkU4e09vkA&s=10" alt="Wildlife habitat in Assam">
+            <div class="card-content">
+              <span class="tag">Wildlife Sanctuary</span>
+              <h3>Chakrashila Wildlife Sanctuary</h3>
+              <p>Explore a protected hill and forest landscape in western Assam, known as a habitat of the golden langur.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Chakrashila+Wildlife+Sanctuary+Assam" target="_blank" rel="noopener noreferrer">Explore Chakrashila ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="bornadi wildlife sanctuary udalguri baksa elephant forest">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeE9904YLt07w4kGSbVPtvqcxw85U0_DjuvQt8d0KDHe-JfJ6LD_B0cWzr&s=10" alt="Forest habitat">
+            <div class="card-content">
+              <span class="tag">Wildlife Sanctuary</span>
+              <h3>Bornadi Wildlife Sanctuary</h3>
+              <p>A foothill sanctuary in northern Assam with forest and grassland habitats for varied wildlife.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Bornadi+Wildlife+Sanctuary+Assam" target="_blank" rel="noopener noreferrer">Explore Bornadi ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="deepor beel wildlife sanctuary guwahati wetland migratory birds">
+            <img loading="lazy" src="https://media.assettype.com/outlooktraveller/import/outlooktraveller/public/uploads/articles/explore/149.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true" alt="Wetland and natural habitat">
+            <div class="card-content">
+              <span class="tag">Wildlife Sanctuary</span>
+              <h3>Deepor Beel Wildlife Sanctuary</h3>
+              <p>Discover an important wetland on the edge of Guwahati that attracts many resident and migratory birds.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Deepor+Beel+Wildlife+Sanctuary+Guwahati" target="_blank" rel="noopener noreferrer">Explore Deepor Beel ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="sonai rupai wildlife sanctuary sonitpur foothills birds elephant">
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GpkPCdFplC7FsbLjcvLfzhusNqzY-RVlt1KRZPSIDg&s=10" alt="Forest and foothill landscape">
+            <div class="card-content">
+              <span class="tag">Wildlife Sanctuary</span>
+              <h3>Sonai Rupai Wildlife Sanctuary</h3>
+              <p>Find forest and grassland habitats along the Himalayan foothills in Sonitpur district.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Sonai+Rupai+Wildlife+Sanctuary+Assam" target="_blank" rel="noopener noreferrer">Explore Sonai Rupai ↗</a>
+            </div>
+          </article>
+
+          <article class="destination-card reveal" data-category="nature" data-name="amchang wildlife sanctuary guwahati forest elephants">
+            <img loading="lazy" src="https://s7ap1.scene7.com/is/image/incredibleindia/amchang-wildlife-sanctuary-1-attr-hero?qlt=82&ts=1742156785569&wid=200" alt="Forest near Guwahati">
+            <div class="card-content">
+              <span class="tag">Wildlife Sanctuary</span>
+              <h3>Amchang Wildlife Sanctuary</h3>
+              <p>A forested protected area on Guwahati's outskirts, known for its hills and wildlife habitat.</p>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Amchang+Wildlife+Sanctuary+Guwahati" target="_blank" rel="noopener noreferrer">Explore Amchang ↗</a>
+            </div>
+          </article>
+
+        <p id="noResults" hidden style="text-align:center;padding:25px;color:var(--muted)">No destinations found. Try another search.</p>
+      </div>
+    </section>
+
+    <section class="section" id="about" style="background:#edf2e8">
+      <div class="container about-grid">
+        <div>
+          <img class="about-image" loading="lazy" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=85" alt="Wild deer in a green forest">
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow">The Assam experience</span>
+          <h2>Nature, culture and unforgettable journeys.</h2>
+          <p>Assam is shaped by the Brahmaputra, lush forests, tea country and communities with rich cultural traditions.</p>
+          <p>Travel thoughtfully, respect local customs and check current access conditions before visiting protected areas or remote destinations.</p>
+          <ul class="check-list">
+            <li>Wildlife and birdwatching</li>
+            <li>Tea garden experiences</li>
+            <li>Local food and crafts</li>
+            <li>History and heritage</li>
+            <li>River landscapes</li>
+            <li>Community-led tourism</li>
+          </ul>
+          <a class="btn" href="#planner">Start planning →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiences">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Make it memorable</span>
+          <h2>Experiences for every traveller</h2>
+          <p>Build a trip around the landscapes and traditions you want to explore.</p>
+        </div>
+
+        <div class="experiences">
+          <article class="experience reveal">
+            <div class="emoji">🦏</div>
+            <h3>Wildlife & nature</h3>
+            <p>Look for wildlife with authorised guides and follow park rules and conservation guidance.</p>
+          </article>
+          <article class="experience reveal">
+            <div class="emoji">🍃</div>
+            <h3>Tea country</h3>
+            <p>Explore the story of Assam tea and enjoy the quiet scenery of the plantations.</p>
+          </article>
+          <article class="experience reveal">
+            <div class="emoji">🎭</div>
+            <h3>Living culture</h3>
+            <p>Discover regional cuisine, weaving, crafts, music and community traditions respectfully.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#edf2e8">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Trip inspiration</span>
+          <h2>Choose a journey</h2>
+          <p>These sample plans are starting points. Transport and availability depend on your dates.</p>
+        </div>
+
+        <div class="packages">
+          <article class="package">
+            <span class="tag">Nature escape</span>
+            <h3>Wild Assam</h3>
+            <p>3–4 days · Wildlife and countryside</p>
+            <ul>
+              <li>Travel to the Kaziranga region</li>
+              <li>Guided nature experiences</li>
+              <li>Local food and rural scenery</li>
+            </ul>
+            <button class="btn" data-package="4" data-interest="nature">Plan this trip</button>
+          </article>
+
+          <article class="package featured">
+            <span class="tag">Culture & nature</span>
+            <h3>Assam Highlights</h3>
+            <p>5–6 days · A varied introduction</p>
+            <ul>
+              <li>Explore Guwahati</li>
+              <li>Discover tea country</li>
+              <li>Add wildlife or heritage stops</li>
+            </ul>
+            <button class="btn" data-package="5" data-interest="mixed">Plan this trip</button>
+          </article>
+
+          <article class="package">
+            <span class="tag">History & heritage</span>
+            <h3>Stories of Assam</h3>
+            <p>4–5 days · Culture and history</p>
+            <ul>
+              <li>Visit cultural landmarks</li>
+              <li>Explore Ahom-era heritage</li>
+              <li>Learn about local crafts</li>
+            </ul>
+            <button class="btn" data-package="4" data-interest="heritage">Plan this trip</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="planner">
+      <div class="container planner-grid">
+        <div class="dark-panel">
+          <span class="eyebrow">Your next adventure</span>
+          <h3>Let's plan your Assam journey.</h3>
+          <p>Share your travel dates and interests to create a suggested itinerary.</p>
+          <p><strong>Please note:</strong> This form creates a local itinerary. It does not make a confirmed reservation.</p>
+        </div>
+
+        <div class="form-panel">
+          <h3>Trip planning form</h3>
+          <form id="bookingForm">
+            <div class="form-grid">
+              <div class="field">
+                <label for="bookName">Full name *</label>
+                <input id="bookName" name="name" required autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="bookEmail">Email *</label>
+                <input id="bookEmail" name="email" type="email" required autocomplete="email">
+              </div>
+              <div class="field">
+                <label for="travelDate">Travel start date *</label>
+                <input id="travelDate" name="date" type="date" required>
+              </div>
+              <div class="field">
+                <label for="bookDays">Duration *</label>
+                <select id="bookDays" name="days" required>
+                  <option value="3">3 days</option>
+                  <option value="4">4 days</option>
+                  <option value="5" selected>5 days</option>
+                  <option value="6">6 days</option>
+                  <option value="7">7 days</option>
+                  <option value="8">8 days</option>
+                  <option value="9">9 days</option>
+                  <option value="10">10 days</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="travellers">Number of travellers *</label>
+                <input id="travellers" name="travellers" type="number" min="1" max="30" value="2" required>
+              </div>
+              <div class="field">
+                <label for="tripInterest">Main interest *</label>
+                <select id="tripInterest" name="interest" required>
+                  <option value="mixed">A bit of everything</option>
+                  <option value="nature">Nature & wildlife</option>
+                  <option value="culture">Culture & local life</option>
+                  <option value="spiritual">Spiritual & cultural sites</option>
+                  <option value="heritage">History & heritage</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="tripNotes">Additional preferences</label>
+                <textarea id="tripNotes" name="notes" placeholder="Budget, places you want to visit, accessibility needs..."></textarea>
+              </div>
+              <div class="field full">
+                <button class="btn" type="submit">Create my itinerary →</button>
+              </div>
+            </div>
+          </form>
+          <div class="form-message" id="bookingMessage" aria-live="polite"></div>
+          <p style="font-size:.8rem;color:var(--muted);margin-top:12px">Information is stored in this browser if local storage is available. No email is sent.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="map">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Find your way</span>
+          <h2>Explore Assam on the map</h2>
+          <p>Use the map to explore the region and plan your route.</p>
+        </div>
+
+        <div class="map-grid">
+          <div class="dark-panel">
+            <h3>Start in Guwahati</h3>
+            <p>Guwahati is a common starting point for exploring Assam. Journey times vary with road conditions, transport and season.</p>
+            <p>Check official tourism and park websites for current visitor guidance.</p>
+            <a class="btn btn-gold" href="https://assamtourism.gov.in/" target="_blank" rel="noopener noreferrer">Official Assam Tourism ↗</a>
+          </div>
+
+          <iframe
+            class="map-frame"
+            title="Map of Assam, India"
+            loading="lazy"
+            src="https://maps.google.com/maps?q=Assam%2C%20India&t=&z=7&ie=UTF8&iwloc=&output=embed"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" style="background:#edf2e8">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Contact us</h2>
+          <p>Have a question or need help shaping your itinerary?</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="dark-panel contact-details">
+            <h3>We'd love to hear from you.</h3>
+            <p>Use the contact form to share your travel questions or ideas.</p>
+            <p>📍 <strong>Destination:</strong> Assam, Northeast India</p>
+            <p>🌿 <strong>Travel style:</strong> Nature, culture and heritage</p>
+            <p>🗺️ <strong>Planning tip:</strong> Confirm seasonal access before travelling.</p>
+          </div>
+
+          <div class="form-panel">
+            <h3>Send a message</h3>
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="contactName">Your name *</label>
+                  <input id="contactName" name="name" required autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="contactEmail">Email address *</label>
+                  <input id="contactEmail" name="email" type="email" required autocomplete="email">
+                </div>
+                <div class="field full">
+                  <label for="contactSubject">Subject *</label>
+                  <input id="contactSubject" name="subject" required>
+                </div>
+                <div class="field full">
+                  <label for="contactMessage">Message *</label>
+                  <textarea id="contactMessage" name="message" required></textarea>
+                </div>
+                <div class="field full">
+                  <button class="btn" type="submit">Save message</button>
+                </div>
+              </div>
+            </form>
+            <div class="form-message" id="contactStatus" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <span class="eyebrow">Your story starts here</span>
+        <h2>Let Assam surprise you.</h2>
+        <p>Explore wild landscapes, discover new flavours and experience the warmth of Northeast India.</p>
+        <a class="btn btn-gold" href="#planner">Plan your journey →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Explore Assam 🌿</h3>
+          <p>A travel inspiration website celebrating Assam's landscapes, wildlife, culture and heritage.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="#destinations">Destinations</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#planner">Plan a trip</a>
+          </div>
+        </div>
+        <div>
+          <h4>Useful links</h4>
+          <div class="footer-links">
+            <a href="https://assamtourism.gov.in/" target="_blank" rel="noopener noreferrer">Assam Tourism ↗</a>
+            <a href="https://kaziranga.assam.gov.in/" target="_blank" rel="noopener noreferrer">Kaziranga Park ↗</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© <span id="year"></span> Explore Assam. Travel responsibly and respect local communities.</div>
+    </div>
+  </footer>
+
+  <!-- Login and registration demo -->
+  <div class="modal-backdrop" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <div class="modal">
+      <button class="modal-close" id="closeAuth" aria-label="Close dialog">✕</button>
+      <h2 id="authTitle">Welcome to Explore Assam</h2>
+      <p id="authSubtitle">Sign in or create a account in this browser.</p>
+
+      <div class="modal-tabs">
+        <button type="button" class="active" id="loginTab">Login</button>
+        <button type="button" id="registerTab">Register</button>
+      </div>
+
+      <form id="authForm">
+        <div class="field" id="authNameField" hidden style="margin-bottom:14px">
+          <label for="authName">Full name *</label>
+          <input id="authName" autocomplete="name">
+        </div>
+        <div class="field" style="margin-bottom:14px">
+          <label for="authEmail">Email *</label>
+          <input id="authEmail" type="email" required autocomplete="email">
+        </div>
+        <div class="field" style="margin-bottom:18px">
+          <label for="authPassword">Password *</label>
+          <input id="authPassword" type="password" required minlength="6" autocomplete="current-password">
+        </div>
+        <button class="btn" id="authSubmit" type="submit" style="width:100%">Sign in</button>
+      </form>
+      <div class="form-message" id="authStatus" aria-live="polite"></div>
+      <p style="font-size:.8rem;margin-top:15px"> Do not use a real password. This example does not provide secure authentication.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="scripts/index.js" defer></script>
+</body>
+</html>
